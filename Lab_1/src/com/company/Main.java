@@ -63,11 +63,11 @@ public class Main {
 
         //Zad 9
         java.lang.System.out.println
-                ("                         ------\n" +
-                "    _____              /  Hello \\\n" +
-                "  /       \\_||_      <  Junior   >\n" +
-                " /           :_|       \\ Coder! /\n" +
-                " \\__________/            ------\n"
+                ("                          ------\n" +
+                "       _____  ..        / Hello  \\\n" +
+                "     /      \\_||_      <  Junior  >\n" +
+                " _  /          __|      \\ Coder! /\n" +
+                "|___\\__________/          ------\n"
                 );
 
         //Zad 10
