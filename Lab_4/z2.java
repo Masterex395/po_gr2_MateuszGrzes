@@ -1,0 +1,33 @@
+import java.io.*;
+import java.io.FileReader;
+import java.util.Scanner;
+import java.lang.StringBuffer;
+
+public class z1 {
+    public static void main(String[] args){
+        String str = "filename.txt";
+        char c = 'a';
+        System.out.println(reader(str,c));
+    }
+    public static int reader(String str, char c){
+        int count = 0;
+        try{
+            Scanner file = new Scanner(new FileReader(str));
+            StringBuffer sb = new StringBuffer();
+            while(file.hasNext()){
+                sb.append(file.next());
+            }
+            file.close();
+            for(int i=0;i<sb.length();i++){
+                if(sb.charAt(i)==c){
+                    count+=1;
+                }
+            }
+        }
+        catch (FileNotFoundException e){
+            System.out.println("Error");
+            e.printStackTrace();
+        }
+        return count;
+    }
+}
